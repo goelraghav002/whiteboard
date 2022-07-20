@@ -49,23 +49,6 @@ function draw(e) {
 	ctx.stroke();
 }
 
-if (document.addEventListener) {
-	document.addEventListener(
-		'contextmenu',
-		function (e) {
-			clearAll();
-			e.preventDefault();
-		},
-		false
-	);
-} else {
-	document.attachEvent('oncontextmenu', function () {
-		clearAll();
-		window.event = false;
-	});
-}
-
 canvas.addEventListener('mousedown', startDraw);
 canvas.addEventListener('mouseup', stopDraw);
 canvas.addEventListener('mousemove', draw);
-reset.addEventListener('click', clearAll);
