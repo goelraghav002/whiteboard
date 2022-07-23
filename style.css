@@ -29,9 +29,9 @@ html::-webkit-scrollbar {
 
 }
 
-canvas{
+/* canvas{
     background: lightgray;
-}
+} */
 
 #clear{
   position: fixed;
